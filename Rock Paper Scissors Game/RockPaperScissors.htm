@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game - Stone Paper Scissor</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            height: 465px;
+            /* width: 700px; */
+            margin: auto;
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+        body {
+            background-color: #161616;
+        }
+
+        option {
+            font-weight: bold;
+        }
+
+        h3 {
+            margin: auto;
+        }
+
+        h1 {
+            position: absolute;
+            top: 7%;
+            left: 43%;
+            color: rgb(255, 255, 255);
+            font-family: 'Arial Narrow Bold', sans-serif;
+            text-shadow: 2px 2px 2px grey;
+        }
+
+        .game {
+            position: absolute;
+            top: 20%;
+            left: 42%;
+        }
+
+        .startPlaying {
+            position: absolute;
+            bottom: 82px;
+            left: 43%;
+            width: 150px;
+            height: 90px;
+            border: none;
+        }
+
+        .startPlaying:hover {
+            background-color: #161616;
+            color: white;
+
+        }
+
+        .pointsTable {
+            position: absolute;
+            top: 62px;
+            left: 27px;
+            color: white;
+        }
+        
+        td{
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="game">
+            <label for="user">User Choice:</label>
+            <select name="choose" id="select">
+                <option value="Stone">Stone</option>
+                <option value="Paper">Paper</option>
+                <option value="Scissor">Scissor</option>
+            </select>
+
+            <button for="option" class="btn1">Submit</button>
+            <p>Computer Choice: <span class="span1">-</span></p>
+            <h3><i>Round <span class = "roundCount"></span> :-</i> <span class="span2">-</span></h3>
+
+        </div>
+
+        <h1>Let's Start</h1>
+
+        <button class="startPlaying">Start Game</button>
+    </div>
+
+    <table border="2x solid" class="pointsTable">
+        <tr>
+            <td>User Points</td>
+            <td>Computer Points</td>
+        </tr>
+        <tr>
+            <td class="round1U">0</td>
+            <td class="round1C">0</td>
+        </tr>
+        <tr>
+            <td class="round2U">0</td>
+            <td class="round2C">0</td>
+        </tr>
+        <tr>
+            <td class="round3U">0</td>
+            <td class="round3C">0</td>
+        </tr>
+        <tr>
+            <td class="totalU"></td>
+            <td class="totalC"></td>
+        </tr>
+    </table>
+</body>
+<script src="RockPaperScissors.js"></script>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #212121;
+        }
+
+        nav a {
+            border: 2px solid black;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            font-weight: bolder;
+
+
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: rgb(127, 188, 216);
+            padding: 10px;
+            height: 5.5vh;
+            width: 100vw;
+        }
+
+        #banner{
+            /* position: absolute; */
+            margin-top: 279px;
+            bottom: 50vh;
+            text-align: center;
+            /* right: 46.7vw; */
+            color: azure;
+            
+        }
+
+        #clock{
+            position: absolute;
+            left:45.1vw;
+            top: 50vh;
+            height: 50px;
+            width: 150px;
+            background-color: orange;
+            /* padding: 2px; */
+            color: beige;
+            align-content: center;
+            text-align: center;
+            font-weight: bolder;
+            font-family: Tahoma;
+            /* align-items: center; */
+            border-radius: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="http://youtube.com" target="_blank">Youtube</a>
+    </nav>
+
+    <div class="center">
+        <div id="banner"><span>Your local time</span></div>
+        <div id="clock"></div>
+    </div>
+    <script src="clock.js"></script>
+</body>
+
+</html>

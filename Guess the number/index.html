@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess It or Miss It!!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #3a3939;
+        }
+
+        nav a {
+            border: 2px solid black;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            font-weight: bolder;
+
+
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: slateblue;
+            padding: 10px;
+            height: 5.5vh;
+            width: 100vw;
+        }
+
+        .bar {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 29px;
+            text-align: center;
+            background-color: orangered;
+            color: gainsboro;
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        .content {
+            text-align: center;
+            margin: 25px;
+            letter-spacing: 1px;
+            font-family: 'Courier New', Courier, monospace;
+            color: ghostwhite;
+            /* padding: 10px; */
+        }
+
+        .first,
+        .second {
+            margin: 5px;
+        }
+
+        form {
+            text-align: center;
+            margin: 45px;
+        }
+
+        input,
+        label {
+            margin: 5px;
+        }
+
+        input {
+            height: 29px;
+            width: 165px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        label {
+            color: azure;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: block;
+            font-weight: bolder;
+            font-size: 30px;
+
+        }
+
+        button {
+            display: block;
+            margin: auto;
+            height: 28px;
+            padding: 5px;
+            font-weight: bold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-radius: 6px;
+            background-color: black;
+            color: whitesmoke;
+        }
+
+        .guesses {
+            display: inline;
+            align-content: center;
+            width: 22px;
+            height: 21px;
+            background-color: gray;
+        }
+
+        .display {
+            text-align: center;
+            color: whitesmoke;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            /* font-size: 17px; */
+        }
+
+        span{
+            font-size: 18px;
+        }
+
+        .loworHigh{
+            color: white;
+            
+        }
+
+        #newGame:hover{
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="http://youtube.com" target="_blank">Youtube</a>
+    </nav>
+
+    <div class="bar">
+        <p>Number guessing game</p>
+    </div>
+
+    <div class="content">
+        <p class="first">Try and guess a random number between 1 to 100</p>
+        <p class="second">You have 10 attempts to guess the right number</p>
+    </div>
+
+    <form>
+        <label for="guessfield" id="guess">Guess a Number</label>
+        <input type="text" id="guessfield">
+
+        <button type="submit" id="subt">Submit Guess</button>
+    </form>
+
+    <div class="display">
+        <p>Previous Guesses: <span class="guesses"></span></p>
+        <p>Guess Remaining: <span class="attemptsrem">10</span></p>
+        <p class="lowOrHigh"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Chai aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayDate = function(str){
+    console.log(str, Date.now());
+    
+ }
+
+let intervalId;
+let counter = 0
+
+
+// clearInterval(intervalId)
+
+document.querySelector("#start").addEventListener('click',
+function(e){
+    counter++
+    if (counter == 1) {
+        intervalId = setInterval(sayDate , 1000,"hi")
+        // alert(counter)
+    }
+    else{
+        console.log("you can't do this it takes a lot of memory");
+        // alert(counter)
+    }
+
+})
+
+document.querySelector("#stop").addEventListener('click',function(e){
+    clearInterval(intervalId)
+    intervalId = null
+})
+
+
+</script>
+</html>

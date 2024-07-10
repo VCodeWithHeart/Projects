@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color scheme switcher</title>
+    <style>
+        .button{
+            border: 2px solid black;
+            margin: 50px;
+            padding: 50px;
+            display: inline-block;
+        }
+
+        #grey{
+            background-color: grey;
+        }
+        #blue{
+            background-color: blue;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+
+        #white{
+            background-color: white;
+        }
+
+        #red{
+            background-color: red;
+        }
+
+        nav a{
+            border: 2px solid black;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+           
+        }
+
+        h2{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="canvas">
+        <nav>
+            <a href="/">Home</a>
+            <a href="http://youtube.com" target="_blank">Youtube</a>
+        </nav>
+    
+        <h1>Color scheme switcher</h1>
+    
+        <span class="button" id="white"></span>
+        <span class="button" id="grey"></span>
+        <span class="button" id="blue"></span>
+        <span class="button" id="yellow"></span>
+        <span class="button" id="red"></span>
+    
+        <h2>Try clicking on the Colors above
+            <span>to change the background color of this page!</span>
+        </h2>
+    </div>
+   <script src="cswitch.js"></script>
+   
+</body>
+</html>
+
