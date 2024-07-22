@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 10px 0px 20px 0px;
+            color: black;
+        }
+
+        body {
+            background-color: cadetblue;
+        }
+
+        .container {
+            border: 2px solid white;
+            height: 335px;
+            width: 500px;
+            /* margin-top: auto; */
+            padding: 10px;
+            /* position: absolute; */
+            /* top: 25%; */
+        }
+
+        body .container {
+            margin: 60px 0px 40px 0px;
+        }
+
+        .container,
+        label,
+        input {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        label,
+        input {
+            font-size: larger;
+            text-align: center;
+            border: none;
+            padding: 5px;
+        }
+
+        input[type="text"] {
+            border-radius: 10px;
+            margin-left: 5px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 75px;
+            border-radius: 50px;
+            height: 30px;
+            justify-content: space-evenly;
+        }
+
+        .btns {
+            display: flex;
+            width: 50%;
+            justify-content: space-around;
+        }
+
+        .submit,
+        .reset {
+            border: none;
+        }
+
+        .submit:hover {
+            background-color: green;
+            color: white;
+            /* border: 1px solid black; */
+            box-shadow: 1px 1px black;
+        }
+
+        .reset:hover {
+            background-color: red;
+            color: white;
+            /* border: 1px solid black; */
+            box-shadow: 1px 1px black;
+        }
+
+        .result {
+            border: 2px solid white;
+            height: 50px;
+            width: 500px;
+            /* margin: auto; */
+            /* margin-bottom: auto; */
+            padding: 10px;
+            background-color: rgb(38, 150, 20);
+            color: white;
+            align-content: center;
+        }
+
+        .result {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: larger;
+        }
+
+        #showYears,
+        #showMonths,
+        #showDays {
+            height: 40px;
+            background-color: white;
+            color: black;
+            border: 1px solid grey;
+        }
+
+        #showResult {
+            margin: 5px;
+        }
+
+        #showDays {
+            margin-bottom: 50px;
+        }
+
+        h3 {
+            display: inline;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>AGE CALCULATOR</h2>
+
+        <form action="" autocomplete="off">
+            <label for="date">Date:</label>
+            <input type="text" id="date">
+            <label for="month">Month:</label>
+            <input type="text" id="month">
+            <label for="year">Year:</label>
+            <input type="text" id="year">
+
+
+        </form>
+
+        <div class="btns">
+            <button class="reset">Reset</button>
+            <button class="submit">Submit</button>
+        </div>
+
+    </div>
+
+    <div class="result" id="showResult">
+        <h3 class="ageresult">Age: <span class="verdictAge">-</span></h3>
+    </div>
+    <div class="result" id="showYears">
+        <h3 class="years">Years: <span class="verdictYears">-</span></h3>
+    </div>
+    <div class="result" id="showMonths">
+        <h3 class="months">Months: <span class="verdictMonths">-</span></h3>
+    </div>
+
+    <div class="result" id="showDays">
+        <h3 class="days">Days: <span class="verdictDays">-</span></h3>
+    </div>
+
+    <script src="ageCalc.js"></script>
+</body>
+
+</html>
